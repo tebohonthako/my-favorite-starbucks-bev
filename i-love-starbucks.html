@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frappucinos</title>
+    <style>
+      body {
+        background: linear-gradient(
+          68.6deg,
+          rgb(252, 165, 241) 1.8%,
+          rgb(181, 255, 255) 100.5%
+        );
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: #885df1;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      h1 {
+        text-align: center;
+        color: #885df1;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid #885df1;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+        line-height: 25px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 17px;
+        margin: 20px 0 10px;
+        font-family: monospace;
+      }
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 12px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+        color: #885df1;
+      }
+      .footer {
+        text-align: center;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 10px 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I Love Caramel Frappucinos!</h1>
+      <h2>Starbucks only 🗽</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/356/original/Starbucks-Caramel-Frappuccino-3.jpg?1678700334"
+        alt="Caramel frappucino"
+        width="390"
+      />
+      <hr />
+      <p>
+        Caramel syrup meets coffee, milk and ice for a rendezvous in the
+        blender, while whipped cream and buttery caramel sauce layer the love on
+        top.
+        <br />
+        To change things up, try it affogato-style with a hot espresso shot
+        poured right over the top. <br />
+        In a word, heavenly! If you like sweet drinks, you will love the buttery
+        caramel-syrupy taste of this frappuccino. And, the taste of the caramel
+        drizzled cream on top will stay with you long after your drink is
+        finished. <br />
+        <em>One thing you won’t get is a strong taste of coffee.</em>
+        <br />
+        <br />
+      </p>
+
+      <a
+        href="https://en.wikipedia.org/wiki/Frappuccino"
+        target="_blank"
+        class="learn-more"
+        >Read more on Wikipedia
+      </a>
+
+      <br />
+      <button>👉🏾Buy Starbucks</button>
+      <br />
+      <br />
+
+      <p class="footer">
+        <strong
+          >This page was built with 💜 by
+          <a href="https://www.linkedin.com/in/tebohonthako/" target="_blank"
+            >Teboho Nthako
+          </a>
+        </strong>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email-address?");
+        let emoji = prompt("What is your favorite emoji 😋?");
+        let age = prompt("How old are you, " + name + "?");
+
+        if (age < 12) {
+          alert("Caffeine can kill you at that age! ☠");
+        } else {
+          alert("You're good for the caffeine!");
+        }
+
+        alert(
+          "Thank you " +
+            name +
+            "! We'll be in touch by email, meanwhile enjoy lots of frappucinnos! " +
+            emoji
+        );
+      }
+
+      let buybutton = document.querySelector("button");
+      buybutton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
